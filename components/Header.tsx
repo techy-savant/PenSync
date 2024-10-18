@@ -1,29 +1,23 @@
-import { cn } from '@/lib/utils'
-import Image from 'next/image'
-import Link from 'next/link'
+import { cn } from "@/lib/utils";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = ({ children, className }: HeaderProps) => {
   return (
     <div className={cn("header", className)}>
-      <Link href='/' className="md:flex-1">
-        <Image 
-          src="/assets/icons/logo.svg"
+      <Link href="/" className="flex items-center ">
+        <Image
+          src="/assets/icons/pensync.svg"
           alt="Logo with name"
-          width={120}
-          height={32}
-          className="hidden md:block"
+          width={35}
+          height={25}
+          className=""
         />
-        <Image 
-          src="/assets/icons/logo-icon.svg"
-          alt="Logo"
-          width={32}
-          height={32}
-          className="mr-2 md:hidden"
-        />
+        <h2 className="text-white font-bold text-xl mr-2 ">PenSync</h2>
       </Link>
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

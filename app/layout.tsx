@@ -13,8 +13,11 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "LiveDocs",
-  description: "Your go-to collaborative editor",
+  title: "PenSync",
+  description: "Collaborative Writing and Editing PLatform.",
+  icons: {
+    icon: "/assets/icons/pensync.svg",
+  },
 };
 
 export default function RootLayout({
