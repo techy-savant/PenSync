@@ -20,10 +20,10 @@ Collaborative Writing and Editing PLatform.    </div>
 
 ## 📋 <a name="table">Table of Contents</a>
 
-1.  [About](#about)
-2.  [Tech Stack](#tech-stack)
-3.  [Features](#features)
-4.  [Quick Start](#quick-start)
+*  [About](#about)
+*  [Tech Stack](#tech-stack)
+*  [Features](#features)
+*  [Quick Start](#quick-start)
  
 
 
@@ -42,13 +42,24 @@ Collaborative Writing and Editing Platform. Easily brainstorm, contribute, and c
 
 ## <a name="features">Features</a>
 
--  **Income and Expense Input**: Allows users to input their income and expenses.
+☑️ Collaborative Text Editor: Multiple users can edit the same document simultaneously with real-time updates.
 
-- **Budget Management**: Enables users to manage their budgets effectively.
+☑️ Documents Management
 
-- **Personalized Financial Advice**: Provides detailed financial advice based on user-specific financial data using Googles GEMINI-AI API.
+* Create Documents: Users can create new documents, which are automatically saved and listed.
+* Delete Documents: Users can delete documents they own.
+* Share Documents: Users can share documents via email or link with view/edit permissions.
+* List Documents: Display all documents owned or shared with the user, with search and sorting functionalities.
 
-- **Data Visualisation and Metrics**: Provides various financial metrics like total income, expenses, budget amount and also provides an Interactive Chart for better visualisation of users Financial Data.
+☑️ Comments: Users can add inline and general comments, with threading for discussions.
+
+☑️ Active Collaborators on Text Editor: Show active collaborators with real-time presence indicators.
+
+☑️ Notifications: Notify users of document shares, new comments, and collaborator activities.
+
+☑️ Responsive: The application is responsive across all devices.
+
+and many more, including code architecture and reusability
 
 ## <a name="quick-start"> Quick Start</a>
 
@@ -85,8 +96,8 @@ Create a new file named `.env` in the root of your project and add the following
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
 
 NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY=
 NEXT_PUBLIC_LIVEBLOCKS_SECRET_KEY=
